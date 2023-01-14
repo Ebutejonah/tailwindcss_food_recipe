@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dark:bg-gray-800 dark:text-gray-100 h-screen">
+        <div class="container mx-auto p-6 flex flex-col md:grid grid-cols-3 dark:bg-gray-800 dark:text-gray-100">
+            <header>
+                <nav>
+                    <div class="flex justify-between md:justify-end">
+                        <div class="flex pl-6 space-x-20 md:pr-2 md:space-x-0 md:border-r-2 md:border-gray-600 md:flex-col">
+                            <div>
+                                <a href="#"><h2 class="font-semibold uppercase">food zone</h2></a>
+                            </div>
+                            <div>
+                                <ul class="hidden space-y-2 text-right mt-14 md:block">
+                                    <li class="hover:text-gray-500"><span><a href="#">Home<span><i class="pl-2 fa fa-home" aria-hidden="true"></i></span></a></span></li>
+                                    <li class="hover:text-gray-500"><span><a href="#">About</span><i class="pl-2 fa fa-files-o" aria-hidden="true"></i></span></a></span></li>
+                                    <li class="hover:text-gray-500"><span><a href="#">Contact<span><i class="fa fa-user-circle-o pl-2" aria-hidden="true"></i></span></a>
+                                    </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="hamburger" class="flex flex-col items-end md:hidden">
+                            <i class="fa fa-bars cursor-pointer" aria-hidden="true"></i>
+                            <ul id="menu" class="hidden space-y-2 text-right mt-10 md:hidden">
+                                <li class="hover:text-gray-500"><span><a href="#">Home<span><i class="pl-2 fa fa-home" aria-hidden="true"></i></span></a></span></li>
+                                <li class="hover:text-gray-500"><span><a href="#">About</span><i class="pl-2 fa fa-files-o" aria-hidden="true"></i></span></a></span></li>
+                                <li class="hover:text-gray-500"><span><a href="#">Contact<span><i class="fa fa-user-circle-o pl-2" aria-hidden="true"></i></span></a>
+                                </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main class="col-span-2">
+                <section>
+                    <div>
+                        <div class="pt-4 md:pt-0 md:pr-6">
+                            <span class="flex justify-start md:justify-end pl-6">Light/Dark Mode</span>
+                            <input type="checkbox" class="hidden" id="toggle">
+                            <label for="toggle">
+                                <div class="container mx-auto pl-16 flex justify-start md:justify-end cursor-pointer">
+                                    <div class="w-10 h-5 bg-gray-300 rounded-full items-center p-1 flex">
+                                        <div class="toggle_dot w-4 h-4 rounded-full bg-gray-500 transform duration-300 ease-in-out"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="flex justify-center mt-8 md:mt-0 space-x-4 p-4 pr-0 md:pr-8">
+                            <span><a href="#" class="access">LOG IN</a></span>
+                            <span><a href="#" class="access">SIGN UP</a></span>
+                        </div>
+                        <div class="p-6">
+                            <h1 class="font-bold text-6xl">Recipes</h1>
+                            <h3 class="font-semibold text-lg py-6">For Your Satisfaction</h3>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="flex flex-col space-y-6 p-6">
+                        <h4 class="font-semibold border-b-2 border-gray-600 text-sm">Latest Recipes</h4>
+                        <div class="flex flex-col space-y-6 md:flex-row md:space-x-6 md:justify-between md:space-y-0">
+                            <div class="cards">
+                                <img src="img/stew.jpg"alt="stew_jpg" class="w-full">
+                                <div class="m-2 pl-2">
+                                    <h4 class="menuname">Chilli Stew</h4>
+                                    <h4 class="chef">Recipe by Mario</h4>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <img src="img/noodles.jpg" alt="noodles_jpg" class="w-full">
+                                <div class="m-2 pl-2">
+                                    <h4 class="menuname">Veg Noodles</h4>
+                                    <h4 class="chef">Recipe by Mario</h4>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <img src="img/curry.jpg" alt="curry_jpg" class="w-full">
+                                <div class="m-2 pl-2">
+                                    <h4 class="menuname">Potato Soup</h4>
+                                    <h4 class="chef">Recipe by Mario</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col my-6 p-6">
+                        <h3 class="font-semibold border-b-2 border-gray-600 text-sm">Most Popular</h3>
+                    </div>
+                    <div class="flex justify-center pb-4">
+                        <button class="rounded-full bg-gray-400 flex p-2 font-semibold text-sm transform hover:scale-125 transition ease-in duration-300">
+                            Load More
+                        </button>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    
+    <script src="https://use.fontawesome.com/0932eddc79.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
