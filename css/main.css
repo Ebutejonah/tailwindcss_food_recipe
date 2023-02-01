@@ -540,16 +540,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-5 {
   height: 1.25rem;
 }
 
 .h-4 {
   height: 1rem;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-10 {
